@@ -8,12 +8,11 @@ public class ExerciseModel {
         this.id = id;
         this.exerciseName = exerciseName;
     }
-
     public int getId() {
         return id;
     }
-
     public String getExerciseName() {
         return exerciseName;
     }
+
 }

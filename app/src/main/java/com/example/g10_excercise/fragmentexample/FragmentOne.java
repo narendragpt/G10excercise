@@ -13,7 +13,7 @@ public class FragmentOne extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup viewGroup, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_one, viewGroup, false);
-        TextView output= (TextView)view.findViewById(R.id.msg1);
+        TextView output = (TextView)view.findViewById(R.id.msg1);
         output.setText("Fragment One");
         return view;
     }

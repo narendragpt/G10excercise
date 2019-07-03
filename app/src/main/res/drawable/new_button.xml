@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="180dp">
+
+    <item
+        android:drawable="@drawable/button_pressed_yellow"
+        android:state_pressed="true" />
+
+    <item
+        android:drawable="@color/colorRed"
+        android:state_focused="true" />
+
+    <item android:drawable="@color/colorBlue" />
+</selector>

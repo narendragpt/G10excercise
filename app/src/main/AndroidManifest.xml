@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.g10_excercise">
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,9 +23,22 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".xmlfragments.XmlFragmentActivity" android:label="Fragment list Example"/>
+        <activity android:name=".imageslistview.ImagesListActivity" android:label="Images List"/>
         <activity android:name=".fragmentexample.FragmentExampleActivity" android:label="Fragment Button" />
-
+        <activity android:name=".studentexamlist.examActivity" android:label="Examlist"/>
+        <activity android:name=".endlessactivityexample.AnimationExample" android:label="Endless View"/>
+        <activity android:name=".test.IndexListActivity" android:label="index list"/>
+        <activity android:name=".differentlayoutview.LayoutActivity" android:label="index list"/>
+        <activity android:name=".activitydatapassing.DataActivity" android:label="Data"/>
+        <activity android:name=".activitydatapassing.DataPassedActivity" android:label="Data Passing"/>
+        <activity android:name=".emailexample.MainActivity" android:label="vdcdvdfv"/>
+        <activity android:name=".imagepassing.ImagePassed" android:label="images passed"/>
+        <activity android:name=".imagepassing.ImageActivity" android:label="Images "/>
+        <activity android:name=".notificationexample.NotificationActivity" android:label="Notification1"/>
+        <activity android:name=".notificationexample.NotificationView" android:label="Notification "/>
+        <activity android:name=".userprofile.UserProfileActivity" android:label="User Profile"/>
+        <activity android:name=".userprofile.EditUserProfile" android:label="EditProfile "/>
+        <activity android:name=".activitygridlist.GridActivity" android:label="EditProfile "/>
+        <activity android:name=".activitygridlist.GridSecondActivity" android:label="Images "/>
     </application>
-
 </manifest>

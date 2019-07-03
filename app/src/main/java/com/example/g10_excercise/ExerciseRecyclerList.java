@@ -10,17 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class ExerciseRecyclerList extends RecyclerView.Adapter<ExerciseViewHolder> {
-
     private final List<ExerciseModel> list;
     final View.OnClickListener onClickListener;
-
-
     public ExerciseRecyclerList(List<ExerciseModel> list, View.OnClickListener onClickListener){
         this.list = list;
         this.onClickListener = onClickListener;
     }
-
-
     @NonNull
     @Override
     public ExerciseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -37,7 +32,6 @@ public class ExerciseRecyclerList extends RecyclerView.Adapter<ExerciseViewHolde
         holder.itemView.setTag(item);
         holder.exerciseName.setText(item.getExerciseName());
     }
-
     @Override
     public int getItemCount() {
         return list.size();
