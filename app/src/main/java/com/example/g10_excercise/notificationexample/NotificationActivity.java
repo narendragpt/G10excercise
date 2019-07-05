@@ -47,7 +47,7 @@ public class NotificationActivity extends AppCompatActivity {
         });
     }
 
-    private void addNotification() {
+    public void addNotification() {
         NotificationCompat.Builder builder =
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.ic_test)
@@ -71,7 +71,6 @@ public class NotificationActivity extends AppCompatActivity {
 
         // Sets a title for the Inbox style big view
         inboxStyle.setBigContentTitle("Big Title Details:");
-
         // Moves events into the big view
         for (int i=0; i < events.length; i++) {
             inboxStyle.addLine(events[i]);
@@ -81,7 +80,6 @@ public class NotificationActivity extends AppCompatActivity {
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent,
                 PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(contentIntent);
-
         // Add as notification
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(0, builder.build());

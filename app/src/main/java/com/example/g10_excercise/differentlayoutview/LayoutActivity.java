@@ -12,7 +12,7 @@ public class LayoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_activity_view);
+        setContentView(R.layout.index_recycle_view);
         // Initializing list view with the custom adapter
         RecyclerView list =  findViewById(R.id.recyclerView);
         ArrayList<LayoutModel> itemList = new ArrayList<>();

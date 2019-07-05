@@ -20,7 +20,7 @@ public class ExerciseRecyclerList extends RecyclerView.Adapter<ExerciseViewHolde
     @Override
     public ExerciseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View listItem = layoutInflater.inflate(R.layout.item_exercise, parent, false);
+        View listItem = layoutInflater.inflate(R.layout.index_name, parent, false);
         ExerciseViewHolder viewHolder = new ExerciseViewHolder(listItem);
         listItem.setOnClickListener(onClickListener);
         return viewHolder;

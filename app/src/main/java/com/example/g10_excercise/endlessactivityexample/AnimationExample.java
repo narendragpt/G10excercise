@@ -18,7 +18,7 @@ public class AnimationExample extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_animation_example);
+        setContentView(R.layout.index_recycle_view);
         recyclerView   = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
         populateData();

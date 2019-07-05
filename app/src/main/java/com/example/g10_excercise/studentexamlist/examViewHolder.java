@@ -16,7 +16,7 @@ public class examViewHolder extends RecyclerView.ViewHolder {
     public final TextView examDate;
    public examViewHolder (@NonNull View itemView) {
         super(itemView);
-       progressBar = itemView.findViewById(R.id.progressBar);
+
         examName = (TextView)itemView.findViewById(R.id.examName);
         examDate = (TextView)itemView.findViewById(R.id.examDate);
         examMessage = (TextView)itemView.findViewById(R.id.examMessage);

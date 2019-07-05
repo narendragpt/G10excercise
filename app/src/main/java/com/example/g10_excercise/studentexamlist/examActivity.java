@@ -22,7 +22,7 @@ int n =1 ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_exam_student);
+        setContentView(R.layout.index_recycle_view);
         // setSupportActionBar(toolbar);
         RecyclerView list = findViewById(R.id.recyclerView);
         final List<examData> examList = new ArrayList<>();
